@@ -24,6 +24,7 @@ client.on('message', async (message) => {
 	const serverQueue = queue.get(message.guild.id);
 
 	if (message.content.startsWith(`${PREFIX}play`)) {
+		if (message.content.length < 7) return message.channel.send('Fuck off');
 		const voiceChannel = message.member.voice.channel;
 		if (!voiceChannel)
 			return message.channel.send(
