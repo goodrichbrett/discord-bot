@@ -210,7 +210,7 @@ function play(guild, song) {
 		});
 	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
-	serverQueue.textChannel.send(`**${song.title}** has started playing`);
+	serverQueue.textChannel.send(`**${song.title}** has started playing, **FUCK ERIC**`);
 }
 
 client.login(process.env.TOKEN);
